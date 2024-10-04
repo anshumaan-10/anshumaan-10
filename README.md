@@ -9,6 +9,9 @@ I'm a DevSecOps and Application Security Engineer with a strong foundation in **
 💼 **LinkedIn**: [Anshumaan Singh](https://www.linkedin.com/in/anshumaan-singh-6b51b5239)  
 📂 **GitHub**: [Anshumaan Singh](https://github.com/anshumaan-10)
 
+<img align="right" alt="Coding" width="400" src="https://raw.githubusercontent.com/devSouvik/devSouvik/master/gif3.gif">
+
+
 ---
 
 ### 🛠️ **What I Do**
