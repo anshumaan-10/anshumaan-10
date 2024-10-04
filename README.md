@@ -202,11 +202,10 @@ Currently, I'm diving deeper into **Google Cloud Security** and working towards 
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=anshumaan-10&show_icons=true&locale=en&layout=compact" alt="anshumaan-10" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=anshumaan-10&show_icons=true&locale=en" alt="anshumaan-10" /></p>
-
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=anshumaan-10&" alt="anshumaan-10" /></p>
 
 ### 🔝 Top Contributed Repo
+
 ![](https://github-contributor-stats.vercel.app/api?username=anshumaan-10&limit=5&theme=flat&combine_all_yearly_contributions=true)
 
 ---
