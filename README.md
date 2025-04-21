@@ -69,12 +69,13 @@ I'm a passionate **DevSecOps Engineer** and **Application Security Specialist** 
 ![GCP PCA](https://img.shields.io/badge/GCP%20PCA-Professional%20Cloud%20Architect-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 ![Terraform Associate](https://img.shields.io/badge/Terraform%20Certified-HashiCorp-623CE4?style=for-the-badge&logo=terraform&logoColor=white)
 
-
+---
 ### 🌱 Currently Learning
 
 - 🔐 **GCP Cloud Security** and **GKE Policy Enforcement**
 - 📊 Governance, Risk & Compliance (GRC)
 - Certified Kubernetes Security(CKS) - In Progess
+- Google Cloud Professional Cloud Security Enginner - In Progess
 - ☁️ Advanced threat modeling & SOC integrations
 
 ---
@@ -95,8 +96,10 @@ I'm a passionate **DevSecOps Engineer** and **Application Security Specialist** 
 
 ---
 
-### 📄 Resume
+## 📄 Want to learn more?
 
-Want to learn more? [View Resume (PDF)](mailto:[anshumaansingh10jan@gmail.com?subject=Requesting%20Resume](https://drive.google.com/file/d/1FSYPYKnoltpLTqC7Zu6yV3Kdk5scXA3f/view?usp=sharing))
+[👉 View Resume (PDF)](https://drive.google.com/file/d/1FSYPYKnoltpLTqC7Zu6yV3Kdk5scXA3f/view?usp=sharing)  
+📬 Or [email me](mailto:anshumaansingh10jan@gmail.com?subject=Requesting%20Resume)
+
 
 ---
