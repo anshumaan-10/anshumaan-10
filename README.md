@@ -63,11 +63,18 @@ I'm a passionate **DevSecOps Engineer** and **Application Security Specialist** 
 - **Dependabot**, **CodeQL**, **GHAS**
 
 ---
+### 🏅 Certifications
+
+![CKA](https://img.shields.io/badge/CKA-Certified%20Kubernetes%20Administrator-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![GCP PCA](https://img.shields.io/badge/GCP%20PCA-Professional%20Cloud%20Architect-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Terraform Associate](https://img.shields.io/badge/Terraform%20Certified-HashiCorp-623CE4?style=for-the-badge&logo=terraform&logoColor=white)
+
 
 ### 🌱 Currently Learning
 
 - 🔐 **GCP Cloud Security** and **GKE Policy Enforcement**
 - 📊 Governance, Risk & Compliance (GRC)
+- Certified Kubernetes Security(CKS) - In Progess
 - ☁️ Advanced threat modeling & SOC integrations
 
 ---
