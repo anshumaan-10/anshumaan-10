@@ -101,5 +101,6 @@ I'm a passionate **DevSecOps Engineer** and **Application Security Specialist** 
 [👉 View Resume (PDF)](https://drive.google.com/file/d/1FSYPYKnoltpLTqC7Zu6yV3Kdk5scXA3f/view?usp=sharing)  
 📬 Or [email me](mailto:anshumaansingh10jan@gmail.com?subject=Requesting%20Resume)
 
+![Profile views](https://visitor-badge.laobi.icu/badge?page_id=anshumaan-10.anshumaan-10)
 
 ---
