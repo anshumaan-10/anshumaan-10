@@ -250,7 +250,7 @@ I implement governance as guardrails:
 - Automated infra provisioning and secure CI/CD pipelines
 - Implemented monitoring with Prometheus + Grafana
 
----
+
 ## 🏗️ Reference Architecture: Secure-by-Default Delivery (End-to-End)
 
 ```mermaid
@@ -329,7 +329,6 @@ flowchart LR
   XDR --> Logs
   Logs --> SIEM --> Detections --> Alerts
 
----
 
 ## 🏆 Achievements
 - ⭐ Promoted to **IC-2** + Top Performance Rating **5-A** (FY 2024–25)
