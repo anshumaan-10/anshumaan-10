@@ -252,6 +252,86 @@ I implement governance as guardrails:
 
 ---
 
+## 🏗️ Reference Architecture: Secure-by-Default Delivery (End-to-End)
+
+```mermaid
+flowchart LR
+
+  %% ============ Developer & Source ============
+  subgraph A[Developer & Source Control]
+    Dev[Developer Workstation]
+    Git[GitHub Repositories]
+    PR[Pull Request]
+    Reviews[CODEOWNERS + Mandatory Reviews]
+    Branch[Branch Protection Rules]
+  end
+
+  Dev --> PR --> Reviews --> Branch --> Git
+
+  %% ============ CI/CD Control Plane ============
+  subgraph B[CI/CD as Security Control Plane]
+    CI[GitHub Actions / Jenkins]
+    SAST[SAST: Code Security + Pattern Detection]
+    SCA[SCA: Dependency Risk + License]
+    Secrets[Secrets Detection: Prevent Credential Exposure]
+    IaC[IaC Security: Terraform + K8s Manifest Policies]
+    Container[Container Scan: OS + App Layer CVEs]
+    SBOM[SBOM Generation + Artifact Metadata]
+    Policy[Policy-as-Code Gates: Hard Fail on Risk Thresholds]
+    Evidence[Attestation Evidence for UAT/Prod Approval]
+  end
+
+  Git --> CI
+  CI --> SAST --> Policy
+  CI --> SCA --> Policy
+  CI --> Secrets --> Policy
+  CI --> IaC --> Policy
+  CI --> Container --> Policy
+  CI --> SBOM --> Evidence
+  Policy --> Evidence
+
+  %% ============ Artifact & Promotion ============
+  subgraph C[Artifact Integrity + Promotion]
+    Registry[Artifact Registry / Container Registry]
+    Promote[Controlled Promotion: Dev → UAT → Prod]
+    Immutable[Immutable Versioned Tags (No latest)]
+  end
+
+  Evidence --> Registry
+  Registry --> Immutable --> Promote
+
+  %% ============ Kubernetes Enforcement ============
+  subgraph D[Kubernetes Security Enforcement]
+    Admission[Admission Control: OPA Gatekeeper / Policy Engine]
+    Deploy[Deployment Controller]
+    Runtime[Runtime Detection: Falco Signals]
+    Posture[GKE Security Posture / CIS Alignment]
+    XDR[XDR Agents on Nodes]
+  end
+
+  Promote --> Admission
+  Admission -->|Allowed| Deploy
+  Admission -->|Blocked| CI
+
+  Deploy --> Runtime
+  Deploy --> Posture
+  Deploy --> XDR
+
+  %% ============ Detection & Response ============
+  subgraph E[Security Operations + Visibility]
+    Logs[Audit Logs + Runtime Events]
+    SIEM[Chronicle SecOps SIEM]
+    Detections[Detections: Suspicious Access / Drift / Abuse]
+    Alerts[Alerts + Incident Workflow]
+  end
+
+  Runtime --> Logs
+  Posture --> Logs
+  XDR --> Logs
+  Logs --> SIEM --> Detections --> Alerts
+
+---
+
 ## 🏆 Achievements
 - ⭐ Promoted to **IC-2** + Top Performance Rating **5-A** (FY 2024–25)
 - 🥇 **ZeeOlympics Best Performer Award** (FY 2023–24 and FY 2024–25)
