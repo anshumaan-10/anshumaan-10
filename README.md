@@ -130,7 +130,7 @@ I implement governance as guardrails:
 
 ---
 
-## 🧰 Tech Stack (FAANG-Style Categories)
+## 🧰 Tech Stack
 
 ### ☁️ Cloud Platforms
 <p>
