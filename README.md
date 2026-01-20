@@ -251,34 +251,33 @@ I implement governance as guardrails:
 - Implemented monitoring with Prometheus + Grafana
 
 ---
-
 ## 🏗️ Reference Architecture: Secure-by-Default Delivery (End-to-End)
 
 ```mermaid
 flowchart LR
 
-  %% ============ Developer & Source ============
-  subgraph A[Developer & Source Control]
+  %% Developer & Source
+  subgraph A[Developer and Source Control]
     Dev[Developer Workstation]
     Git[GitHub Repositories]
     PR[Pull Request]
-    Reviews[CODEOWNERS + Mandatory Reviews]
+    Reviews[CODEOWNERS and Mandatory Reviews]
     Branch[Branch Protection Rules]
   end
 
   Dev --> PR --> Reviews --> Branch --> Git
 
-  %% ============ CI/CD Control Plane ============
+  %% CI/CD Control Plane
   subgraph B[CI/CD as Security Control Plane]
-    CI[GitHub Actions / Jenkins]
-    SAST[SAST: Code Security + Pattern Detection]
-    SCA[SCA: Dependency Risk + License]
-    Secrets[Secrets Detection: Prevent Credential Exposure]
-    IaC[IaC Security: Terraform + K8s Manifest Policies]
-    Container[Container Scan: OS + App Layer CVEs]
-    SBOM[SBOM Generation + Artifact Metadata]
-    Policy[Policy-as-Code Gates: Hard Fail on Risk Thresholds]
-    Evidence[Attestation Evidence for UAT/Prod Approval]
+    CI[GitHub Actions or Jenkins]
+    SAST[SAST - Code Security and Pattern Detection]
+    SCA[SCA - Dependency Risk and License]
+    Secrets[Secrets Detection - Prevent Credential Exposure]
+    IaC[IaC Security - Terraform and K8s Policies]
+    Container[Container Scan - OS and App Layer CVEs]
+    SBOM[SBOM Generation and Artifact Metadata]
+    Policy[Policy as Code Gates - Hard Fail on Risk Thresholds]
+    Evidence[Attestation Evidence for UAT and Prod Approval]
   end
 
   Git --> CI
@@ -290,22 +289,22 @@ flowchart LR
   CI --> SBOM --> Evidence
   Policy --> Evidence
 
-  %% ============ Artifact & Promotion ============
-  subgraph C[Artifact Integrity + Promotion]
-    Registry[Artifact Registry / Container Registry]
-    Promote[Controlled Promotion: Dev → UAT → Prod]
-    Immutable[Immutable Versioned Tags (No latest)]
+  %% Artifact and Promotion
+  subgraph C[Artifact Integrity and Promotion]
+    Registry[Artifact Registry or Container Registry]
+    Immutable[Immutable Versioned Tags - No latest]
+    Promote[Controlled Promotion - Dev to UAT to Prod]
   end
 
   Evidence --> Registry
   Registry --> Immutable --> Promote
 
-  %% ============ Kubernetes Enforcement ============
+  %% Kubernetes Enforcement
   subgraph D[Kubernetes Security Enforcement]
-    Admission[Admission Control: OPA Gatekeeper / Policy Engine]
+    Admission[Admission Control - Policy Engine]
     Deploy[Deployment Controller]
-    Runtime[Runtime Detection: Falco Signals]
-    Posture[GKE Security Posture / CIS Alignment]
+    Runtime[Runtime Detection - Falco Signals]
+    Posture[Cluster Posture - CIS Alignment]
     XDR[XDR Agents on Nodes]
   end
 
@@ -317,12 +316,12 @@ flowchart LR
   Deploy --> Posture
   Deploy --> XDR
 
-  %% ============ Detection & Response ============
-  subgraph E[Security Operations + Visibility]
-    Logs[Audit Logs + Runtime Events]
-    SIEM[Chronicle SecOps SIEM]
-    Detections[Detections: Suspicious Access / Drift / Abuse]
-    Alerts[Alerts + Incident Workflow]
+  %% Detection and Response
+  subgraph E[Security Operations and Visibility]
+    Logs[Audit Logs and Runtime Events]
+    SIEM[SIEM - Chronicle SecOps]
+    Detections[Detections - Drift, Abuse, Suspicious Access]
+    Alerts[Alerts and Incident Workflow]
   end
 
   Runtime --> Logs
