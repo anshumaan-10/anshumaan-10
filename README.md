@@ -253,6 +253,9 @@ I implement governance as guardrails:
 
 ## 🏗️ Reference Architecture: Secure-by-Default Delivery (End-to-End)
 
+**Security is enforced as architecture: identity boundaries, policy gates, supply chain integrity, runtime controls, and SOC-driven response loops.
+**
+
 <img width="8192" height="1335" alt="image" src="https://github.com/user-attachments/assets/13201c3b-def7-4b5a-8283-c718708a7826" />
 
 
