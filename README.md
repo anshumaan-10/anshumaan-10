@@ -276,7 +276,7 @@ I implement governance as guardrails:
 ---
 
 ## 📄 Want to learn more?
-[👉 View Resume (PDF)](https://drive.google.com/file/d/1FSYPYKnoltpLTqC7Zu6yV3Kdk5scXA3f/view?usp=sharing)  
+[👉 View Resume (PDF)](https://drive.google.com/file/d/1jszWhJhFO3DbrWxVLpTgekNKkPDKPObb/view)  
 📬 Or [email me](mailto:anshumaansingh10jan@gmail.com?subject=Requesting%20Resume)
 
 ![Profile views](https://komarev.com/ghpvc/?username=anshumaan-10&label=Profile%20views&color=0e75b6&style=flat)
