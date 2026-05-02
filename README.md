@@ -32,7 +32,7 @@ I don’t treat security as “findings.”
 I treat security as **invariants**: rules that must remain true regardless of code changes, deployments, or operational stress.
 
 📍 Bengaluru, India  
-🏢 Information Security Analyst (IC-2) @ **ZEE Entertainment Enterprises Ltd**  
+🏢 Information Security Analyst @ **ZEE Entertainment Enterprises Ltd**  
 🧩 Secured **350+ microservices** from development → production using centralized DevSecOps security architecture
 
 ---
