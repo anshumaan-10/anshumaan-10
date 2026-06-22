@@ -283,20 +283,5 @@ I implement governance as guardrails:
 
 ![Profile views](https://komarev.com/ghpvc/?username=anshumaan-10&label=Profile%20views&color=0e75b6&style=flat)
 
-## Overview
+![Uploading image.png…]()
 
-This repository contains project code and supporting assets. It is maintained actively with periodic updates.
-
-## Getting Started
-
-1. Clone this repository.
-2. Install dependencies as documented in the project files.
-3. Run/build using the project-specific commands.
-
-## Repository Structure
-
-Key source code, configuration, and documentation are organized by folders at the repository root.
-
-## Contribution Guidelines
-
-Please open an issue for major changes and submit focused pull requests with clear descriptions.
